@@ -1,0 +1,165 @@
+/*
+ * Created by: Josue Ayala - IDPSolutions - www.ingeniodp.com
+ * Date created: April 2014
+ * Client: eltaier
+ * Project: BrahvaTour
+ * 
+ * */
+
+.clear{
+	clear: both;
+}
+
+body {
+	margin:0;
+	padding:0;
+	background:#000;
+}
+
+.wrapper{
+	width:100%;
+	min-width:990px;
+}
+
+header{
+	height:55px;
+	padding:5px 0;
+	background:rgba(0,0,0,0.75);
+	/*border-bottom:1px solid #93190c;*/
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 2;
+}
+
+	.header_content{
+		min-width: 990px;
+		padding:0 10px;
+		margin: 0 auto;
+	}
+	
+	.hashtag{
+		float:left;
+	}
+
+	.sponsor{
+		float:right;
+	}
+
+.content{
+	height:720px;
+	padding:56px 0 0 0;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	background:url(../images/back_home.jpg) top center #000 no-repeat;
+}
+
+	.left_column{
+		width: 190px;
+		top:56px;
+		position:absolute;
+		left:10px;
+		height:664px;
+	}
+	
+		nav{
+			background:rgba(0,0,0,0.8);
+			margin:0 0 10px 0; 
+		}
+		
+			nav ul{
+				margin:0;
+				padding:0;
+				list-style-type: none;
+			}
+			
+			nav ul li a{
+				display:block;
+				padding:10px 15px;
+				color:#fff;
+				font-size:13px;
+				font-weight:bold;
+				text-decoration:none;
+				background:url(../images/separator.jpg) top center no-repeat transparent;
+			}
+			
+			nav ul li a:hover{
+				color:#aaa;
+				text-decoration:none;
+			}
+	
+	
+	.right_column{
+		width: 190px;
+		top:56px;
+		position:absolute;
+		right:10px;
+		height:100%;
+		background:rgba(0,0,0,0.5);
+	}
+	
+	.cta_text{
+		width: 820px;
+		margin:10px auto 0;
+		text-align: right;
+		position:relative;
+	}
+	
+		.goto_form{
+			position:absolute;
+			width:220px;
+			height:50px;
+			top:380px;
+			right:90px;
+			cursor:pointer;
+		}
+
+footer{
+	width:100%;
+	background:#000;
+	color:#fff;
+}
+
+	.footer_content{
+		width:900px;
+		margin:0 auto;
+		text-align:center;
+		padding:10px 0;
+	}
+	
+	.footer_content h2{
+		font-size:20px;
+		text-transform:uppercase;
+		font-weight: bolder;
+	}
+
+	.footer_content h4{
+		font-size:11px;
+		text-transform:uppercase;
+	}
+
+@media only screen and (max-width:1024px){
+	
+	.cta_text{
+		width: 600px;
+	}
+	
+	.cta_text img{
+		width:280px;
+	}
+
+	.content{
+		background-size:1400px 700px;
+	}
+
+	.goto_form{
+		width:170px;
+		height:50px;
+		top:302px;
+		right:75px;
+	}
+
+	
+}
